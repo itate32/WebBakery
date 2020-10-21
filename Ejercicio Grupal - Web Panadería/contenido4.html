@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <title>EVALUACION EQUIPO LOS SSL</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/estilos.css" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+  <style type="text/css">
+    a {
+      font-size: 12px;
+      color: #d6e5fa;
+      font-weight: Bold;
+      text-decoration: underline;
+
+    }
+
+    a:hover {
+      text-decoration: underline;
+
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .accordion {
+      /* background-color: #eee; */
+      /* color: #444; */
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 20px;
+      transition: 0.4s;
+      /* color: #ff0000; */
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 20px;
+      color: #0352A1;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .accordion:hover {
+      background-color: #FC9181;
+    }
+
+    .accordion:active {
+      color: #FA2F12;
+    }
+
+    button.accordion {
+      background-color: #F9CC9D;
+      border-bottom: 3px solid #1E7509;
+    }
+
+    button.accordion.active {
+      background-color: #FA2F12;
+    }
+
+    .accordion:after {
+      content: '\002B';
+      color: #FC9181;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+      color: #FA2F12;
+    }
+
+    .panel {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+
+    .texto-info p {
+      line-height: 20px;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div id="cargando"></div>
+
+  <div class="wrapper">
+    <header>
+      <div class="wrap">
+        <div class="logo">
+          <a href="#"><img src="images/logo.png" /></a>
+        </div>
+
+        <div class="header-top wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="1s">
+
+        </div>
+        <!--MENU HAMBURGUER -->
+        <div class="btn-menu">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <nav>
+          <!--MENU PRINCIPAL -->
+          <ul>
+            <li><a href="index.html" target="_parent">Inicio</a></li>
+            <li><a href="quienes.html" target="_parent">EL EQUIPO</a></li>
+            <li><a href="contenido1.html" target="_parent">NUESTRO CEO</a></li>
+            <li><a href="contenido2.html" target="_parent">PRODUCTOS</a></li>
+            <li><a href="contenido3.html" target="_parent">SOUVENIRS</a></li>
+            <li><a href="contenido4.html" target="_parent">FAQ</a></li>
+            <li><a href="contenido5.html" target="_parent">RECETAS</a></li>
+            <li><a href="contacto.html" target="_parent">CONTÁCTENOS</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </header>
+
+    <div class="menu-lateral">
+      <div class="cerrar-menu-lateral">
+        <img src="images/cerrar.png" />
+      </div>
+      <ul>
+
+      </ul>
+    </div>
+    <!--MENU MOBILE-->
+    <div class="menu-mobile">
+      <div class="cerrar-menu">
+        <img src="images/cerrar.png" />
+      </div>
+      <ul>
+        <li><a href="index.html" target="_parent">Inicio</a></li>
+        <li><a href="quienes.html" target="_parent">EL EQUIPO</a></li>
+        <li><a href="contenido1.html" target="_parent">NUESTRO CEO</a></li>
+        <li><a href="contenido2.html" target="_parent">PRODUCTOS</a></li>
+        <li><a href="contenido3.html" target="_parent">SOUVENIRS</a></li>
+        <li><a href="contenido4.html" target="_parent">FAQ</a></li>
+        <li><a href="contenido5.html" target="_parent">RECETAS</a></li>
+        <li><a href="contacto.html" target="_parent">CONTÁCTENOS</a></li>
+      </ul>
+
+      <ul class="separador"></ul>
+    </div>
+    <!--LINEA DIVISORA-->
+
+
+    <section class="wrap-postulacion">
+      <div class="wrap-interior">
+
+        <!-- SLIDE PAGINA DE INICIO-->
+
+        <div class="w3-content w3-display-container">
+
+          <div class="w3-display-container-logo mySlides">
+            <img src="images/faq.png" style="width:40%" id="marca">
+
+          </div>
+
+
+
+
+        </div>
+
+        <h1>PREGUNTAS Y RESPUESTAS SOBRE <BR /> NUESTRO PAN</h1>
+        <!--TEXTO INTRODUCTORIO-->
+        <div class="texto-info">
+          <button class="accordion">¿ES SALUDABLE?</button>
+          <div class="panel">
+            <p>Rotundamente sí porque se trata de un alimento que forma parte de la dieta mediterránea dentro del grupo
+              de los tan necesarios hidratos de carbono. Su ingesta nos aporta energía que necesitamos a diario.</p>
+          </div>
+
+          <button class="accordion">¿ENGORDA?</button>
+          <div class="panel">
+            <p>Si se consume con moderación, no. De hecho, varios estudios demuestras que ayuda a controlar el peso.</p>
+          </div>
+
+          <button class="accordion">¿LOS “PALITOS” TIENEN MENOS CALORÍAS?</button>
+          <div class="panel">
+            <p>Las mismas que el pan porque se hacen con harina. No obstante, algunos palitos llevan aceite por lo que
+              el aporte calórico aumenta.</p>
+          </div>
+
+          <button class="accordion">¿TIENE GRASA EL PAN DE MOLDE?</button>
+          <div class="panel">
+            <p>Sí, contiene grasa vegetal que deberá estar indicado en la etiqueta.</p>
+          </div>
+
+          <button class="accordion">¿INTEGRAL O BLANCO?</button>
+          <div class="panel">
+            <p>La principal diferencia entre el pan integral y el blanco es que le primero se hace con harina integral
+              por lo que contiene más fibra. Esta característica ayuda a combatir el estreñimiento.</p>
+          </div>
+          <button class="accordion">¿EL PAN INTEGRAL IMPIDE LA ABSORCIÓN DEL CALCIO?</button>
+          <div class="panel">
+            <p>Aunque la harina integral de trigo contiene ácido fítico que frena la absorción del calcio, si el pan se
+              hace con levadura madre hay una enzima que lo destruye.</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+
+      <!--FORMULARIO DE LOGIN-->
+
+
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+
+      <div class="wrap">
+        <h3>AUSPICIADORES</h3>
+        <div class="f1">
+          <h3>&nbsp;</h3>
+          <a href="#" target="_parent"><img src="images/tesla.png" /></a>
+        </div>
+
+        <div class="f1">
+          <h3>&nbsp;</h3>
+          <a href="#" target="_parent"><img src="images/pollos.png" /></a>
+        </div>
+
+        <div class="f1">
+          <h3>&nbsp;</h3>
+          <a href="#" target="_parent"><img src="images/nasa.png" /></a>
+        </div>
+
+        <div class="f1">
+          <h3>&nbsp;</h3>
+          <a href="#" target="_parent"><img src="images/brazzers.png" /></a>
+        </div>
+
+        <div class="clear"></div>
+
+      </div>
+
+
+    </footer>
+
+  </div><!-- End Wrapper -->
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/funciones.js"></script>
+
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/rowreorder/1.2.7/js/dataTables.rowReorder.min.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset: 100,
+        mobile: false,
+        callback: function (box) {
+          $(box).addClass('animado');
+        }
+      }
+    );
+    wow.init();
+    //Script para slider
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+    //tabla
+
+    $(document).ready(function () {
+      var table = $('#example').DataTable({
+        "language": {
+          "url": "https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        rowReorder: {
+          selector: 'td:nth-child(2)'
+        },
+        responsive: true
+      });
+    });
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
